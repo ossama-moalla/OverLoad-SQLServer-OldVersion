@@ -1,0 +1,154 @@
+D:\ItemManagment\Item\bin\Release\ItemProject.exe.config
+D:\ItemManagment\Item\bin\Release\ItemProject.exe
+D:\ItemManagment\Item\bin\Release\ItemProject.pdb
+D:\ItemManagment\Item\obj\Release\ItemProject.AccountingObj.Forms.PayINForm.resources
+D:\ItemManagment\Item\obj\Release\ItemProject.Configuration.ConfigurationForm.resources
+D:\ItemManagment\Item\obj\Release\ItemProject.Configuration.AddCurrencyForm.resources
+D:\ItemManagment\Item\obj\Release\ItemProject.ItemObj.Forms.AvailableItemTopLevelForm.resources
+D:\ItemManagment\Item\obj\Release\ItemProject.ItemObj.Forms.AvailableItem_BuyOPRS_Form.resources
+D:\ItemManagment\Item\obj\Release\ItemProject.ItemObj.Forms.ShowAvailableItemSimpleForm.resources
+D:\ItemManagment\Item\obj\Release\ItemProject.Trade.Forms.Container.PlaceItemBuyOprForm.resources
+D:\ItemManagment\Item\obj\Release\ItemProject.Trade.Forms.Container.PlaceItemsForm.resources
+D:\ItemManagment\Item\obj\Release\ItemProject.Trade.Forms.PriceInputBox.resources
+D:\ItemManagment\Item\obj\Release\ItemProject.ItemObj.Forms.AddItemFile.resources
+D:\ItemManagment\Item\obj\Release\ItemProject.ItemObj.Forms.AddItemRelationShip.resources
+D:\ItemManagment\Item\obj\Release\ItemProject.ItemObj.Forms.ConsumeUnitAddForm.resources
+D:\ItemManagment\Item\obj\Release\ItemProject.ItemObj.Forms.Form_Spec_Option.resources
+D:\ItemManagment\Item\obj\Release\ItemProject.ItemObj.Forms.ItemForm.resources
+D:\ItemManagment\Item\obj\Release\ItemProject.ItemObj.Forms.ItemsIN.resources
+D:\ItemManagment\Item\obj\Release\ItemProject.ItemObj.Forms.SellTypeForm.resources
+D:\ItemManagment\Item\obj\Release\ItemProject.ItemObj.Forms.FolderSpec.resources
+D:\ItemManagment\Item\obj\Release\ItemProject.ItemObj.Forms.ItemAdd.resources
+D:\ItemManagment\Item\obj\Release\ItemProject.Forms.InputBox.resources
+D:\ItemManagment\Item\obj\Release\ItemProject.ItemObj.Forms.ItemPhotoAdd.resources
+D:\ItemManagment\Item\obj\Release\ItemProject.ItemObj.Forms.Form_ItemSpecRestrict_SetValues.resources
+D:\ItemManagment\Item\obj\Release\ItemProject.ItemObj.Forms.SelectItem.resources
+D:\ItemManagment\Item\obj\Release\ItemProject.ItemObj.Forms.ShowItemsForm.resources
+D:\ItemManagment\Item\obj\Release\ItemProject.ItemObj.Forms.FolderForm.resources
+D:\ItemManagment\Item\obj\Release\ItemProject.Properties.Resources.resources
+D:\ItemManagment\Item\obj\Release\ItemProject.Trade.Forms.Container.AddPlaceForm.resources
+D:\ItemManagment\Item\obj\Release\ItemProject.AccountingObj.Forms.MainWindow.resources
+D:\ItemManagment\Item\obj\Release\ItemProject.Trade.Forms.TradeForms.BillINForm.resources
+D:\ItemManagment\Item\obj\Release\ItemProject.Trade.Forms.TradeForms.BillOUTForm.resources
+D:\ItemManagment\Item\obj\Release\ItemProject.Trade.Forms.TradeContact.ContactForm.resources
+D:\ItemManagment\Item\obj\Release\ItemProject.Trade.Forms.TradeContact.ContactAddForm.resources
+D:\ItemManagment\Item\obj\Release\ItemProject.Trade.Forms.TradeContact.ShowContactsForm.resources
+D:\ItemManagment\Item\obj\Release\ItemProject.Trade.Forms.Container.ContainerAddForm.resources
+D:\ItemManagment\Item\obj\Release\ItemProject.ShowSqlQuery.resources
+D:\ItemManagment\Item\obj\Release\ItemProject.Trade.Forms.Container.ShowLocations.resources
+D:\ItemManagment\Item\obj\Release\ItemProject.Trade.Forms.TradeForms.SellOprForm.resources
+D:\ItemManagment\Item\obj\Release\ItemProject.Trade.Forms.TradeForms.BuyOprForm.resources
+D:\ItemManagment\Item\obj\Release\ItemProject.ItemObj.Forms.AvailabeItemsForm.resources
+D:\ItemManagment\Item\obj\Release\OverLoad.csproj.GenerateResource.Cache
+D:\ItemManagment\Item\obj\Release\ItemProject.exe
+D:\ItemManagment\Item\obj\Release\ItemProject.pdb
+D:\ItemManagment  _Stable\Item\bin\Release\OverLoad Ver 2.0.exe.config
+D:\ItemManagment  _Stable\Item\bin\Release\OverLoad Ver 2.0.exe
+D:\ItemManagment  _Stable\Item\bin\Release\OverLoad Ver 2.0.pdb
+D:\ItemManagment  _Stable\Item\bin\Release\Microsoft.ReportViewer.WinForms.dll
+D:\ItemManagment  _Stable\Item\bin\Release\Microsoft.SqlServer.Types.dll
+D:\ItemManagment  _Stable\Item\bin\Release\de\Microsoft.SqlServer.Types.resources.dll
+D:\ItemManagment  _Stable\Item\bin\Release\es\Microsoft.SqlServer.Types.resources.dll
+D:\ItemManagment  _Stable\Item\bin\Release\fr\Microsoft.SqlServer.Types.resources.dll
+D:\ItemManagment  _Stable\Item\bin\Release\it\Microsoft.SqlServer.Types.resources.dll
+D:\ItemManagment  _Stable\Item\bin\Release\ja\Microsoft.SqlServer.Types.resources.dll
+D:\ItemManagment  _Stable\Item\bin\Release\ko\Microsoft.SqlServer.Types.resources.dll
+D:\ItemManagment  _Stable\Item\bin\Release\pt\Microsoft.SqlServer.Types.resources.dll
+D:\ItemManagment  _Stable\Item\bin\Release\ru\Microsoft.SqlServer.Types.resources.dll
+D:\ItemManagment  _Stable\Item\bin\Release\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+D:\ItemManagment  _Stable\Item\bin\Release\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.AccountingObj.Forms.EmployeeUserForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.AccountingObj.Forms.ExchangeOPRForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.AccountingObj.Forms.MainWindowForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.AccountingObj.Forms.PayOUTForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.AccountingObj.Forms.PayINForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.AccountingObj.Forms.ShowLogForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.AccountingObj.Forms.ShowEmployeeUserAccountsForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Company.Forms.CompanyManagmentForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Company.Forms.CompanyPayOrdersForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Company.Forms.EmployeeForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Company.Forms.EmployeeSalaryClauseForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Company.Forms.EndAssignForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Company.Forms.EndJobStartForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Company.Forms.EmployeeMent_Form.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Company.Forms.AssignForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Company.Forms.CertificateForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Company.Forms.EmployeePayOrderForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Company.Forms.QualificationForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Company.Forms.PartForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Company.Forms.JobStartForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Company.Forms.SalaryClauseDeductionForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Company.Forms.SalaryClauseDueForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Company.Forms.CompanySalarysForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Company.Forms.SalarysPayOrderForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Company.Forms.ShowEmployeeMentsForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Configuration.ConfigurationForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Configuration.AddCurrencyForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Reports.BillBuy_Print_Form.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Reports.Form1.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Reports.BillSell_Print_Form.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.ItemObj.Forms.AvailableItemTopLevelForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.ItemObj.Forms.AvailableItem_ItemIN_Form.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.ItemObj.Forms.ShowAvailableItemSimpleForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.ItemObj.Forms.AvailabeItemsForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Maintenance.Forms.AddDiagnosticFile.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Maintenance.Forms.BillMaintenanceForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Maintenance.Forms.Fault_MissedFaultItem_TagForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Maintenance.Forms.DiagnosticOPR_Fault_TagForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Form1.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Maintenance.Forms.MaintenanceOPRForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Maintenance.Forms.MaintenanceOPR_EndWorkForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Maintenance.Forms.MaintenanceOPR_NotFinish_Form.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Maintenance.Forms.MaintenanceOPR_Report_Form.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Maintenance.Forms.RepairOPRForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Maintenance.Forms.DiagnosticOPRForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Maintenance.Forms.FaultForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Maintenance.Forms.MaintenanceAccessoryForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Maintenance.Forms.MeasureOPRForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Maintenance.Forms.MissedFault_Item_Form.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.SelecObjectForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.SelectDataBaseForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Trade.Forms.Container.PlaceItem_ItemINForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Trade.Forms.Container.PlaceItemsForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Trade.Forms.TradeForms.DisAssemblageForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Trade.Forms.TradeForms.IndustrialForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Trade.Forms.TradeForms.AssemblageForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Trade.Forms.PriceInputBox.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.ItemObj.Forms.AddItemFile.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.ItemObj.Forms.AddItemRelationShip.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.ItemObj.Forms.ConsumeUnitAddForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.ItemObj.Forms.Form_Spec_Option.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.ItemObj.Forms.ItemForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.ItemObj.Forms.ItemsIN.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.ItemObj.Forms.SellTypeForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.ItemObj.Forms.FolderSpec.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.ItemObj.Forms.ItemAdd.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Forms.InputBox.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.ItemObj.Forms.ItemPhotoAdd.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.ItemObj.Forms.Form_ItemSpecRestrict_SetValues.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.ItemObj.Forms.SelectItem.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.ItemObj.Forms.ShowItemsForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.ItemObj.Forms.FolderForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Properties.Resources.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Trade.Forms.Container.AddPlaceForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Trade.Forms.TradeForms.BillAdditionalClauseForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Trade.Forms.TradeForms.ItemIN_StoreReport_Form.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Trade.Forms.TradeForms.OperationItemsIN_ItemOutListForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Trade.Forms.TradeForms.ItemIN_ItemOutListForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Trade.Forms.TradeForms.BillSellForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Trade.Forms.TradeForms.BillOUTReportForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Trade.Forms.TradeForms.BillBuyForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Trade.Forms.TradeContact.ContactForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Trade.Forms.TradeContact.ContactAddForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Trade.Forms.TradeContact.ShowContactsForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Trade.Forms.Container.ContainerAddForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.ShowSqlQuery.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Trade.Forms.Container.ShowLocations.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Trade.Forms.TradeForms.ItemOUTForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\ItemProject.Trade.Forms.TradeForms.ItemINForm.resources
+D:\ItemManagment  _Stable\Item\obj\Release\OverLoad.csproj.GenerateResource.Cache
+D:\ItemManagment  _Stable\Item\obj\Release\RdlCompile.cache
+D:\ItemManagment  _Stable\Item\obj\Release\RdlCompile.compiled
+D:\ItemManagment  _Stable\Item\obj\Release\OverLoad Ver 2.0.exe
+D:\ItemManagment  _Stable\Item\obj\Release\OverLoad Ver 2.0.pdb
+D:\ItemManagment  _Stable\Item\obj\Release\OverLoad.csprojResolveAssemblyReference.cache

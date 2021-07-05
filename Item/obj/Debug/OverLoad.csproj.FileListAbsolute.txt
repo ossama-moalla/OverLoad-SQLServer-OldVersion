@@ -1,0 +1,312 @@
+D:\ItemManagment Ver 2.0\Item\bin\Debug\OverLoad Ver 2.0.exe.config
+D:\ItemManagment Ver 2.0\Item\bin\Debug\OverLoad Ver 2.0.exe
+D:\ItemManagment Ver 2.0\Item\bin\Debug\OverLoad Ver 2.0.pdb
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.AccountingObj.Forms.ExchangeOPRForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.AccountingObj.Forms.MainWindowForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.AccountingObj.Forms.PayOUTForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.AccountingObj.Forms.PayINForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Company.Forms.CompanyManagmentForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Company.Forms.CompanyPayOrdersForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Company.Forms.EmployeeForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Company.Forms.EmployeeSalaryClauseForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Company.Forms.EndAssignForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Company.Forms.EndJobStartForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Company.Forms.EmployeeMent_Form.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Company.Forms.AssignForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Company.Forms.CertificateForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Company.Forms.EmployeePayOrderForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Company.Forms.QualificationForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Company.Forms.PartForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Company.Forms.JobStartForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Company.Forms.SalaryClauseDeductionForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Company.Forms.SalaryClauseDueForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Company.Forms.CompanySalarysForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Company.Forms.SalarysPayOrderForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Company.Forms.ShowEmployeeMentsForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Configuration.ConfigurationForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Configuration.AddCurrencyForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.ItemObj.Forms.AvailableItemTopLevelForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.ItemObj.Forms.AvailableItem_ItemIN_Form.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.ItemObj.Forms.ShowAvailableItemSimpleForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Maintenance.Forms.AddDiagnosticFile.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Maintenance.Forms.BillMaintenanceForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Maintenance.Forms.Fault_MissedFaultItem_TagForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Maintenance.Forms.DiagnosticOPR_Fault_TagForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Maintenance.Forms.RepairOPRForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Maintenance.Forms.DiagnosticOPRForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Maintenance.Forms.FaultForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Maintenance.Forms.MaintenanceAccessoryForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Maintenance.Forms.MaintenanceOPRForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Maintenance.Forms.MeasureOPRForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Maintenance.Forms.MissedFault_Item_Form.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.SelecObjectForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.SelectDataBaseForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.Container.PlaceItem_ItemINForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.Container.PlaceItemsForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.TradeForms.DisAssemblageForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.TradeForms.IndustrialForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.TradeForms.AssemblageForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.PriceInputBox.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.ItemObj.Forms.AddItemFile.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.ItemObj.Forms.AddItemRelationShip.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.ItemObj.Forms.ConsumeUnitAddForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.ItemObj.Forms.Form_Spec_Option.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.ItemObj.Forms.ItemForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.ItemObj.Forms.ItemsIN.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.ItemObj.Forms.SellTypeForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.ItemObj.Forms.FolderSpec.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.ItemObj.Forms.ItemAdd.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Forms.InputBox.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.ItemObj.Forms.ItemPhotoAdd.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.ItemObj.Forms.Form_ItemSpecRestrict_SetValues.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.ItemObj.Forms.SelectItem.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.ItemObj.Forms.ShowItemsForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.ItemObj.Forms.FolderForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Properties.Resources.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.Container.AddPlaceForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.TradeForms.OperationItemsIN_ItemOutListForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.TradeForms.ItemIN_ItemOutListForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.TradeForms.BillSellForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.TradeForms.BillOUTReportForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.TradeForms.BillBuyForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.TradeContact.ContactForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.TradeContact.ContactAddForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.TradeContact.ShowContactsForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.Container.ContainerAddForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.ShowSqlQuery.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.Container.ShowLocations.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.TradeForms.ItemOUTForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.TradeForms.ItemINForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.ItemObj.Forms.AvailabeItemsForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\OverLoad.csproj.GenerateResource.Cache
+D:\ItemManagment Ver 2.0\Item\obj\Debug\OverLoad Ver 2.0.exe
+D:\ItemManagment Ver 2.0\Item\obj\Debug\OverLoad Ver 2.0.pdb
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\bin\Debug\OverLoad Ver 2.0.exe.config
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\OverLoad Ver 2.0.exe
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\OverLoad Ver 2.0.pdb
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\bin\Debug\OverLoad Ver 2.0.exe
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\bin\Debug\OverLoad Ver 2.0.pdb
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\OverLoad.csprojResolveAssemblyReference.cache
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.AccountingObj.Forms.ExchangeOPRForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.AccountingObj.Forms.MainWindowForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.AccountingObj.Forms.PayOUTForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.AccountingObj.Forms.PayINForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Company.Forms.CompanyManagmentForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Company.Forms.CompanyPayOrdersForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Company.Forms.EmployeeForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Company.Forms.EmployeeSalaryClauseForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Company.Forms.EndAssignForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Company.Forms.EndJobStartForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Company.Forms.EmployeeMent_Form.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Company.Forms.AssignForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Company.Forms.CertificateForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Company.Forms.EmployeePayOrderForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Company.Forms.QualificationForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Company.Forms.PartForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Company.Forms.JobStartForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Company.Forms.SalaryClauseDeductionForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Company.Forms.SalaryClauseDueForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Company.Forms.CompanySalarysForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Company.Forms.SalarysPayOrderForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Company.Forms.ShowEmployeeMentsForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Configuration.ConfigurationForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Configuration.AddCurrencyForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.ItemObj.Forms.AvailableItemTopLevelForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.ItemObj.Forms.AvailableItem_ItemIN_Form.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.ItemObj.Forms.ShowAvailableItemSimpleForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Maintenance.Forms.AddDiagnosticFile.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Maintenance.Forms.BillMaintenanceForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Maintenance.Forms.Fault_MissedFaultItem_TagForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Maintenance.Forms.DiagnosticOPR_Fault_TagForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Maintenance.Forms.RepairOPRForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Maintenance.Forms.DiagnosticOPRForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Maintenance.Forms.FaultForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Maintenance.Forms.MaintenanceAccessoryForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Maintenance.Forms.MaintenanceOPRForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Maintenance.Forms.MeasureOPRForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Maintenance.Forms.MissedFault_Item_Form.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.SelecObjectForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.SelectDataBaseForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.Container.PlaceItem_ItemINForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.Container.PlaceItemsForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.TradeForms.DisAssemblageForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.TradeForms.IndustrialForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.TradeForms.AssemblageForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.PriceInputBox.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.ItemObj.Forms.AddItemFile.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.ItemObj.Forms.AddItemRelationShip.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.ItemObj.Forms.ConsumeUnitAddForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.ItemObj.Forms.Form_Spec_Option.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.ItemObj.Forms.ItemForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.ItemObj.Forms.ItemsIN.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.ItemObj.Forms.SellTypeForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.ItemObj.Forms.FolderSpec.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.ItemObj.Forms.ItemAdd.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Forms.InputBox.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.ItemObj.Forms.ItemPhotoAdd.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.ItemObj.Forms.Form_ItemSpecRestrict_SetValues.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.ItemObj.Forms.SelectItem.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.ItemObj.Forms.ShowItemsForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.ItemObj.Forms.FolderForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Properties.Resources.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.Container.AddPlaceForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.TradeForms.OperationItemsIN_ItemOutListForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.TradeForms.ItemIN_ItemOutListForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.TradeForms.BillSellForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.TradeForms.BillOUTReportForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.TradeForms.BillBuyForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.TradeContact.ContactForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.TradeContact.ContactAddForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.TradeContact.ShowContactsForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.Container.ContainerAddForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.ShowSqlQuery.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.Container.ShowLocations.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.TradeForms.ItemOUTForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.TradeForms.ItemINForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.ItemObj.Forms.AvailabeItemsForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\OverLoad.csproj.GenerateResource.Cache
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Maintenance.Forms.MaintenanceOPR_Report_Form.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Maintenance.Forms.MaintenanceOPR_Report_Form.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Maintenance.Forms.MaintenanceOPR_EndWorkForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Maintenance.Forms.MaintenanceOPR_EndWorkForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.TradeForms.ItemIN_StoreReport_Form.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Maintenance.Forms.MaintenanceOPR_NotFinish_Form.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Maintenance.Forms.MaintenanceOPR_NotFinish_Form.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.TradeForms.ItemIN_StoreReport_Form.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.AccountingObj.Forms.EmployeeUserForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.AccountingObj.Forms.ShowEmployeeUserAccountsForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.AccountingObj.Forms.ShowLogForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.AccountingObj.Forms.EmployeeUserForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.AccountingObj.Forms.ShowLogForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.AccountingObj.Forms.ShowEmployeeUserAccountsForm.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.TradeForms.BillAdditionalClauseForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Trade.Forms.TradeForms.BillAdditionalClauseForm.resources
+C:\Users\o_moalla\Desktop\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Form1.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Form1.resources
+D:\ItemManagment Ver 2.0\Item\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\ItemManagment Ver 2.0\Item\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\ItemManagment Ver 2.0\Item\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+D:\ItemManagment Ver 2.0\Item\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+D:\ItemManagment Ver 2.0\Item\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+D:\ItemManagment Ver 2.0\Item\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+D:\ItemManagment Ver 2.0\Item\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+D:\ItemManagment Ver 2.0\Item\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+D:\ItemManagment Ver 2.0\Item\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+D:\ItemManagment Ver 2.0\Item\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+D:\ItemManagment Ver 2.0\Item\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+D:\ItemManagment Ver 2.0\Item\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+D:\ItemManagment Ver 2.0\Item\obj\Debug\RdlCompile.cache
+D:\ItemManagment Ver 2.0\Item\obj\Debug\RdlCompile.compiled
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Reports.Form1.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Reports.BillBuy_Print_Form.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\ItemProject.Reports.BillSell_Print_Form.resources
+D:\ItemManagment Ver 2.0\Item\obj\Debug\OverLoad.csprojResolveAssemblyReference.cache
+D:\ItemManagment  _Stable\Item\bin\Debug\OverLoad Ver 2.0.exe.config
+D:\ItemManagment  _Stable\Item\obj\Debug\OverLoad Ver 2.0.exe
+D:\ItemManagment  _Stable\Item\obj\Debug\OverLoad Ver 2.0.pdb
+D:\ItemManagment  _Stable\Item\bin\Debug\OverLoad Ver 2.0.exe
+D:\ItemManagment  _Stable\Item\bin\Debug\OverLoad Ver 2.0.pdb
+D:\ItemManagment  _Stable\Item\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\ItemManagment  _Stable\Item\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\ItemManagment  _Stable\Item\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+D:\ItemManagment  _Stable\Item\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+D:\ItemManagment  _Stable\Item\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+D:\ItemManagment  _Stable\Item\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+D:\ItemManagment  _Stable\Item\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+D:\ItemManagment  _Stable\Item\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+D:\ItemManagment  _Stable\Item\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+D:\ItemManagment  _Stable\Item\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+D:\ItemManagment  _Stable\Item\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+D:\ItemManagment  _Stable\Item\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.AccountingObj.Forms.EmployeeUserForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.AccountingObj.Forms.ExchangeOPRForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.AccountingObj.Forms.MainWindowForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.AccountingObj.Forms.PayOUTForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.AccountingObj.Forms.PayINForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.AccountingObj.Forms.ShowLogForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.AccountingObj.Forms.ShowEmployeeUserAccountsForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Company.Forms.CompanyManagmentForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Company.Forms.CompanyPayOrdersForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Company.Forms.EmployeeForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Company.Forms.EmployeeSalaryClauseForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Company.Forms.EndAssignForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Company.Forms.EndJobStartForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Company.Forms.EmployeeMent_Form.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Company.Forms.AssignForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Company.Forms.CertificateForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Company.Forms.EmployeePayOrderForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Company.Forms.QualificationForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Company.Forms.PartForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Company.Forms.JobStartForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Company.Forms.SalaryClauseDeductionForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Company.Forms.SalaryClauseDueForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Company.Forms.CompanySalarysForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Company.Forms.SalarysPayOrderForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Company.Forms.ShowEmployeeMentsForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Configuration.ConfigurationForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Configuration.AddCurrencyForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Reports.BillBuy_Print_Form.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Reports.Form1.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Reports.BillSell_Print_Form.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.ItemObj.Forms.AvailableItemTopLevelForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.ItemObj.Forms.AvailableItem_ItemIN_Form.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.ItemObj.Forms.ShowAvailableItemSimpleForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.ItemObj.Forms.AvailabeItemsForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Maintenance.Forms.AddDiagnosticFile.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Maintenance.Forms.BillMaintenanceForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Maintenance.Forms.Fault_MissedFaultItem_TagForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Maintenance.Forms.DiagnosticOPR_Fault_TagForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Form1.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Maintenance.Forms.MaintenanceOPRForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Maintenance.Forms.MaintenanceOPR_EndWorkForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Maintenance.Forms.MaintenanceOPR_NotFinish_Form.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Maintenance.Forms.MaintenanceOPR_Report_Form.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Maintenance.Forms.RepairOPRForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Maintenance.Forms.DiagnosticOPRForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Maintenance.Forms.FaultForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Maintenance.Forms.MaintenanceAccessoryForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Maintenance.Forms.MeasureOPRForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Maintenance.Forms.MissedFault_Item_Form.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.SelecObjectForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.SelectDataBaseForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Trade.Forms.Container.PlaceItem_ItemINForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Trade.Forms.Container.PlaceItemsForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Trade.Forms.TradeForms.DisAssemblageForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Trade.Forms.TradeForms.IndustrialForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Trade.Forms.TradeForms.AssemblageForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Trade.Forms.PriceInputBox.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.ItemObj.Forms.AddItemFile.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.ItemObj.Forms.AddItemRelationShip.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.ItemObj.Forms.ConsumeUnitAddForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.ItemObj.Forms.Form_Spec_Option.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.ItemObj.Forms.ItemForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.ItemObj.Forms.ItemsIN.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.ItemObj.Forms.SellTypeForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.ItemObj.Forms.FolderSpec.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.ItemObj.Forms.ItemAdd.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Forms.InputBox.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.ItemObj.Forms.ItemPhotoAdd.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.ItemObj.Forms.Form_ItemSpecRestrict_SetValues.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.ItemObj.Forms.SelectItem.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.ItemObj.Forms.ShowItemsForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.ItemObj.Forms.FolderForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Properties.Resources.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Trade.Forms.Container.AddPlaceForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Trade.Forms.TradeForms.BillAdditionalClauseForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Trade.Forms.TradeForms.ItemIN_StoreReport_Form.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Trade.Forms.TradeForms.OperationItemsIN_ItemOutListForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Trade.Forms.TradeForms.ItemIN_ItemOutListForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Trade.Forms.TradeForms.BillSellForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Trade.Forms.TradeForms.BillOUTReportForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Trade.Forms.TradeForms.BillBuyForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Trade.Forms.TradeContact.ContactForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Trade.Forms.TradeContact.ContactAddForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Trade.Forms.TradeContact.ShowContactsForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Trade.Forms.Container.ContainerAddForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.ShowSqlQuery.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Trade.Forms.Container.ShowLocations.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Trade.Forms.TradeForms.ItemOUTForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\ItemProject.Trade.Forms.TradeForms.ItemINForm.resources
+D:\ItemManagment  _Stable\Item\obj\Debug\OverLoad.csproj.GenerateResource.Cache
+D:\ItemManagment  _Stable\Item\obj\Debug\RdlCompile.cache
+D:\ItemManagment  _Stable\Item\obj\Debug\RdlCompile.compiled

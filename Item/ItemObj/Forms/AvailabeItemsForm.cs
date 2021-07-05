@@ -1,0 +1,962 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.IO;
+
+using System.Threading;
+using ItemProject.ItemObj.Objects;
+using ItemProject.ItemObj.ItemObjSQL;
+using ItemProject.Trade.TradeSQL;
+
+namespace ItemProject.ItemObj.Forms
+{
+    public partial class AvailabeItemsForm : Form
+    {
+
+
+        System.Windows.Forms.MenuItem OpenFolderMenuItem;
+        System.Windows.Forms.MenuItem OpenItemMenuItem;
+        System.Windows.Forms.MenuItem SpecFilter;
+
+
+        List<ItemSpec_Restrict> ItemSpec_Restrict_List;
+        List<ItemSpec> ItemSpec_List;
+        DatabaseInterface DB;
+        Folder folder;
+        List<Folder> FoldersListView = new List<Folder>();
+        List<AvailableItem> ItemsListView = new List<AvailableItem>();
+        FolderSQL foldersql;
+        ItemSQL itemsql;
+        Button front, end;
+        int Path_startIndex = 0;
+        Button[] b;
+        ComboBox[] ComboboxSpec_Value;
+        TextBox[] TextBoxSpec_Value;
+        private Item _ReturnItem;
+        public Item ReturnItem
+        {
+            get { return _ReturnItem; }
+        }
+        delegate void TreeviewVoidDelegate();
+        private bool GetAvailableItem;
+        public AvailabeItemsForm(DatabaseInterface db, Folder f, bool GetAvailableItem_)
+        {
+
+            GetAvailableItem = GetAvailableItem_;
+            InitializeComponent();
+            ItemSpec_Restrict_List = new List<ItemSpec_Restrict>();
+            ItemSpec_List = new List<ItemSpec>();
+         
+            DB = db;
+            foldersql = new FolderSQL(DB);
+            itemsql = new ItemSQL(DB);
+
+            folder = f;
+
+            comboBox1.SelectedIndex = 0;
+            comboBoxFilterItemFolder.SelectedIndex = 0;
+            FillTreeViewFolder();
+            ConfigForm();
+            OpenFolder();
+            comboBoxFilterItemFolder.SelectedIndexChanged += new EventHandler(comboBoxFilterItemFolder_SelectedIndexChanged);
+
+
+            listView1.Focus();
+
+        }
+        public async void ConfigForm()
+        {
+            OpenFolderMenuItem = new System.Windows.Forms.MenuItem("فتح", OpenFolder_MenuItem_Click); ;
+            OpenItemMenuItem = new MenuItem("فتح صفحة العنصر", OpenItem_MenuItem_Click);
+            SpecFilter = new MenuItem("فلترة حسب الخصائص", SpecFilter_MenuItem_Click);
+
+            front = new Button();
+            end = new Button();
+            front.Font = new Font(front.Font.FontFamily, 6);
+
+            front.Size = new Size(25, PanelPath.Height);
+            front.TextAlign = ContentAlignment.MiddleCenter;
+            front.Text = ">>";
+            front.BackColor = Color.SkyBlue;
+            front.Location = new Point(0, 0);
+            end.Size = new Size(25, PanelPath.Height);
+
+            end.Text = "<<";
+            end.Font = new Font(front.Font.FontFamily, 6);
+            end.BackColor = Color.SkyBlue;
+            front.Click += new EventHandler(Front_Click);
+            end.Click += new EventHandler(End_Click);
+        }
+        public async void OpenFolder()
+        {
+            comboBoxFilterItemFolder.SelectedIndex = 0;
+
+            textBoxSearch.Text = "";
+            //Thread thread1, thread2;
+            //thread1 = new Thread(new ThreadStart(RefreshTreeView));
+            //thread1.Start();
+
+
+            //thread2 = new Thread(new ThreadStart(FolderIDPath));
+            //thread2.Start();
+
+            FolderIDPath();
+            RefreshTreeView();
+            FoldersListView = foldersql.GetFolderChilds(folder);
+            ItemsListView = new AvailableItemSQL(DB).GetAvailableItemsInFolder(folder);
+            FillComboBoxComapines(ItemsListView);
+            RefreshItems(FoldersListView, ItemsListView);
+            if (splitContainer1.Panel2Collapsed == false)
+                if (folder == null)
+                    splitContainer1.Panel2Collapsed = true;
+                else FillFolderSpec();
+
+        }
+        public async void FillFolderSpec()
+        {
+
+            splitContainer1.Panel2.Controls.Clear();
+            if (folder == null) splitContainer1.Panel2Collapsed = true;
+            ItemSpecSQL ItemSpecSQL_ = new ItemSpecSQL(DB);
+            ItemSpec_Restrict_SQL ItemSpec_Restrict_SQL_ = new ItemSpec_Restrict_SQL(DB);
+            ItemSpec_Restrict_Options_SQL ItemSpec_Restrict_Options_SQL_ = new ItemSpec_Restrict_Options_SQL(DB);
+
+            ItemSpec_Restrict_List = ItemSpec_Restrict_SQL_.GetItemSpecRestrictList(folder);
+            ItemSpec_List = ItemSpecSQL_.GetItemSpecList(folder);
+            if (ItemSpec_Restrict_List.Count == 0 && ItemSpec_List.Count == 0)
+            {
+                MessageBox.Show("لا توجد خصائص مدخلة لهذا المجلد", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                splitContainer1.Panel2Collapsed = true;
+                return;
+            }
+            Label LabelPanelTitle = new Label();
+            LabelPanelTitle.BackColor = Color.LightGreen;
+            LabelPanelTitle.BorderStyle = BorderStyle.FixedSingle;
+            LabelPanelTitle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right | System.Windows.Forms.AnchorStyles.Left)));
+            LabelPanelTitle.AutoSize = false;
+            LabelPanelTitle.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            LabelPanelTitle.Location = new System.Drawing.Point(0, 0);
+            //this.label2.Name = "label2";
+            LabelPanelTitle.Size = new System.Drawing.Size(splitContainer1.Panel2.Width, 20);
+            LabelPanelTitle.TextAlign = ContentAlignment.MiddleLeft;
+            LabelPanelTitle.Text = "فلترة العناصر حسب الخصائص";
+
+
+            Button ButonSpecFilterClose = new Button();
+            ButonSpecFilterClose.Location = new System.Drawing.Point(splitContainer1.Panel2.Width / 2 - 40, splitContainer1.Panel2.Height - 40);
+            ButonSpecFilterClose.Size = new System.Drawing.Size(57, 29);
+            ButonSpecFilterClose.Click += new EventHandler(ButonSpecFilterClose_Click);
+            ButonSpecFilterClose.Text = "اغلاق";
+            ButonSpecFilterClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom)));
+            Panel panelFolderSpecs = new Panel();
+            panelFolderSpecs.BorderStyle = BorderStyle.FixedSingle;
+            panelFolderSpecs.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Bottom)));
+            panelFolderSpecs.AutoScroll = true;
+            panelFolderSpecs.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            panelFolderSpecs.Location = new System.Drawing.Point(5, 30);
+            //this.label2.Name = "label2";
+            panelFolderSpecs.Size = new System.Drawing.Size(splitContainer1.Panel2.Width - 10, splitContainer1.Panel2.Height - 75);
+            panelFolderSpecs.Controls.Clear();
+
+
+
+            Label[] label = new Label[ItemSpec_Restrict_List.Count];
+            ComboboxSpec_Value = new ComboBox[ItemSpec_Restrict_List.Count];
+            int Start_Paint_Position = 10;
+            int h = 10;
+            int w = panelFolderSpecs.Width - 40;
+            for (int i = 0; i < ItemSpec_Restrict_List.Count; i++)
+            {
+                label[i] = new Label();
+                label[i].BackColor = Color.Aquamarine;
+                label[i].BorderStyle = BorderStyle.FixedSingle;
+                label[i].Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right | System.Windows.Forms.AnchorStyles.Left)));
+                label[i].AutoSize = false;
+                label[i].Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                label[i].Location = new System.Drawing.Point(Start_Paint_Position, h);
+                //this.label2.Name = "label2";
+                label[i].Size = new System.Drawing.Size(w, 20);
+                label[i].TextAlign = ContentAlignment.MiddleLeft;
+                label[i].TabIndex = 15;
+                label[i].Text = ItemSpec_Restrict_List[i].SpecName;
+                panelFolderSpecs.Controls.Add(label[i]);
+                ComboboxSpec_Value[i] = new ComboBox();
+                ComboboxSpec_Value[i].Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right | System.Windows.Forms.AnchorStyles.Left)));
+                ComboboxSpec_Value[i].AutoSize = false;
+                ComboboxSpec_Value[i].Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                if (h + 25 > panelFolderSpecs.Height)
+                    w = panelFolderSpecs.Width - 40;// - System.Windows.Forms.SystemInformation.VerticalScrollBarWidth;
+
+                ComboboxSpec_Value[i].Location = new System.Drawing.Point(Start_Paint_Position, h + 25);
+                ComboboxSpec_Value[i].Name = ItemSpec_Restrict_List[i].SpecID.ToString();
+                ComboboxSpec_Value[i].BackColor = Color.White;
+                ComboboxSpec_Value[i].Size = new System.Drawing.Size(w, 20);
+                ComboboxSpec_Value[i].DropDownStyle = ComboBoxStyle.DropDownList;
+                List<ItemSpec_Restrict_Options> ItemSpec_Restrict_Options_ = new List<ItemSpec_Restrict_Options>();
+                ItemSpec_Restrict_Options_ = ItemSpec_Restrict_Options_SQL_.GetItemSpec_Restrict_Options_List(ItemSpec_Restrict_List[i]);
+                Dictionary<uint, string> combosource = new Dictionary<uint, string>();
+                if (ItemSpec_Restrict_Options_.Count > 0)
+                {
+                    combosource.Add(0, "غير محدد");
+                    for (int k = 0; k < ItemSpec_Restrict_Options_.Count; k++)
+                    {
+                        combosource.Add(ItemSpec_Restrict_Options_[k].OptionID, ItemSpec_Restrict_Options_[k].OptionName);
+                    }
+
+                    ComboboxSpec_Value[i].DataSource = new BindingSource(combosource, null);
+                    ComboboxSpec_Value[i].DisplayMember = "Value";
+                    ComboboxSpec_Value[i].ValueMember = "Key";
+                    ComboboxSpec_Value[i].SelectedIndexChanged += new System.EventHandler(this.comboBox_ItemSpec_Value_SelectedIndexChanged);
+
+                }
+                else
+                {
+                    combosource.Add(0, " لم يتم ادخال قيم");
+                    ComboboxSpec_Value[i].DataSource = new BindingSource(combosource, null);
+                    ComboboxSpec_Value[i].DisplayMember = "Value";
+                    ComboboxSpec_Value[i].ValueMember = "Key";
+                }
+
+                panelFolderSpecs.Controls.Add(ComboboxSpec_Value[i]);
+                h = h + 60;
+                if (h > panelFolderSpecs.Height)
+                    w = panelFolderSpecs.Width - 40; //- System.Windows.Forms.SystemInformation.VerticalScrollBarWidth;
+
+            }
+            Label[] label_ = new Label[ItemSpec_List.Count];
+            TextBoxSpec_Value = new TextBox[ItemSpec_List.Count];
+            for (int i = 0; i < ItemSpec_List.Count; i++)
+            {
+                label_[i] = new Label();
+                label_[i].BackColor = Color.Aquamarine;
+                label_[i].BorderStyle = BorderStyle.FixedSingle;
+                label_[i].Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right | System.Windows.Forms.AnchorStyles.Left)));
+                label_[i].AutoSize = false;
+                label_[i].Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                label_[i].Location = new System.Drawing.Point(Start_Paint_Position, h);
+                //this.label2.Name = "label2";
+                label_[i].Size = new System.Drawing.Size(w, 20);
+                label_[i].TextAlign = ContentAlignment.MiddleLeft;
+                label_[i].Text = ItemSpec_List[i].SpecName;
+                panelFolderSpecs.Controls.Add(label_[i]);
+                TextBoxSpec_Value[i] = new TextBox();
+                TextBoxSpec_Value[i].Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right | System.Windows.Forms.AnchorStyles.Left)));
+                TextBoxSpec_Value[i].AutoSize = false;
+                TextBoxSpec_Value[i].Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                if (h + 25 > panelFolderSpecs.Height)
+                    w = panelFolderSpecs.Width - 40;
+                TextBoxSpec_Value[i].Location = new System.Drawing.Point(Start_Paint_Position, h + 25);
+                TextBoxSpec_Value[i].Name = ItemSpec_List[i].SpecID.ToString();
+                TextBoxSpec_Value[i].Size = new System.Drawing.Size(w, 20);
+                TextBoxSpec_Value[i].TextChanged += new EventHandler(textBox_ItemSpec_Value_TextChanged);
+                panelFolderSpecs.Controls.Add(TextBoxSpec_Value[i]);
+                h = h + 60;
+                if (h > panelFolderSpecs.Height)
+                    w = panelFolderSpecs.Width - 40;
+            }
+            Label padding = new Label();
+            padding.Location = new System.Drawing.Point(Start_Paint_Position, h);
+            //this.label2.Name = "label2";
+            padding.Size = new System.Drawing.Size(w, 20);
+            panelFolderSpecs.Controls.Add(padding);
+            splitContainer1.Panel2.Controls.Add(LabelPanelTitle);
+            splitContainer1.Panel2.Controls.Add(panelFolderSpecs);
+            splitContainer1.Panel2.Controls.Add(ButonSpecFilterClose);
+
+        }
+        private void comboBox_ItemSpec_Value_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            FilterItemsBySpec();
+        }
+        private void textBox_ItemSpec_Value_TextChanged(object sender, EventArgs e)
+        {
+            FilterItemsBySpec();
+        }
+        public void FilterItemsBySpec()
+        {
+            ItemSpec_Restrict_Options_SQL ItemSpec_Restrict_Options_SQL_ = new ItemSpec_Restrict_Options_SQL(DB);
+            List<ItemSpec_Restrict_Options> ItemSpec_Restrict_Options_List = new List<ItemSpec_Restrict_Options>();
+            List<ItemSpec_Value> ItemSpec_Value_List = new List<ItemSpec_Value>();
+
+            for (int i = 0; i < ComboboxSpec_Value.Length; i++)
+            {
+                if (ComboboxSpec_Value[i].SelectedIndex >= 1)
+                {
+                    ItemSpec_Restrict ItemSpec_Restrict_ = new ItemSpec_Restrict_SQL(DB).GetItemSpecRestrictInfoByID(Convert.ToUInt32(ComboboxSpec_Value[i].Name));
+                    ItemSpec_Restrict_Options_List.Add(new ItemSpec_Restrict_Options(ItemSpec_Restrict_, ((KeyValuePair<uint, string>)ComboboxSpec_Value[i].SelectedItem).Key, ((KeyValuePair<uint, string>)ComboboxSpec_Value[i].SelectedItem).Value));
+
+                }
+            }
+            for (int i = 0; i < TextBoxSpec_Value.Length; i++)
+            {
+                if (TextBoxSpec_Value[i].Text.Length > 0)
+                {
+                    ItemSpec ItemSpec_ = new ItemSpecSQL(DB).GetItemSpecInfoByID(Convert.ToUInt32(TextBoxSpec_Value[i].Name));
+                    ItemSpec_Value_List.Add(new ItemSpec_Value(null, ItemSpec_, TextBoxSpec_Value[i].Text));
+
+                }
+            }
+            if (ItemSpec_Restrict_Options_List.Count == 0 && ItemSpec_Value_List.Count == 0)
+            {
+                OpenFolder();
+                return;
+            }
+            List<AvailableItem> FilteredItems = new AvailableItemSQL(DB).FilterAvailableItemsBySpec(ItemSpec_Restrict_Options_List, ItemSpec_Value_List);
+            RefreshItems(new List<Folder>(), FilteredItems);
+
+        }
+        public async void FillComboBoxComapines(List<AvailableItem> items)
+        {
+
+            comboBoxCompanies.Items.Clear();
+            List<string> companies = new List<string>();
+            for (int i = 0; i < items.Count; i++)
+            {
+                int ind = companies.IndexOf(items[i]._Item.ItemCompany.ToString());
+                if (ind < 0) companies.Add(items[i]._Item.ItemCompany.ToString());
+
+            }
+            if (companies.Count > 0)
+            {
+
+                comboBoxCompanies.SelectedIndexChanged -= new EventHandler(comboBoxCompanies_SelectedIndexChanged);
+                comboBoxCompanies.Enabled = true;
+                comboBoxCompanies.Items.Add("الكل");
+                comboBoxCompanies.Items.AddRange(companies.ToArray());
+                comboBoxCompanies.SelectedIndex = 0;
+                comboBoxCompanies.SelectedIndexChanged += new EventHandler(comboBoxCompanies_SelectedIndexChanged);
+
+            }
+            else comboBoxCompanies.Enabled = false;
+
+        }
+        public async void RefreshItems(List<Folder> folders, List<AvailableItem> items)
+        {
+            listView1.Items.Clear();
+            if (comboBoxFilterItemFolder.SelectedIndex != 2)
+            {
+
+                for (int i = 0; i < folders.Count; i++)
+                {
+                    ListViewItem item = new ListViewItem(folders[i].FolderName);
+                    item.Name = folders[i].FolderID.ToString();
+                    item.SubItems.Add("");
+                    item.SubItems.Add("مجلد");
+                    if (textBoxSearch.Text.Length > 0)
+                        item.SubItems.Add(foldersql.GetFolderPath(folders[i]));
+                    else
+                        item.SubItems.Add(itemsql.GetItemsInFolder(folders[i]).Count.ToString() + " عنصر , " + foldersql.GetFolderChilds(folders[i]).Count.ToString() + "  مجلد ");
+                    item.ImageIndex = 1;
+                    listView1.Items.Add(item);
+
+                }
+            }
+
+            if (comboBoxFilterItemFolder.SelectedIndex != 1)
+            {
+
+                List<string> companies = new List<string>();
+                for (int i = 0; i < items.Count; i++)
+                {
+                    if (comboBoxCompanies.SelectedIndex > 0 && items[i]._Item.ItemCompany.ToString() != comboBoxCompanies.SelectedItem.ToString()) continue;
+                    if (checkBoxAvailableOnly.Checked)
+                        if (items[i].AvailableAmount.Length < 1) continue;
+                    ListViewItem item = new ListViewItem(items[i]._Item.ItemName);
+                    item.Name = items[i]._Item.ItemID.ToString();
+                    item.SubItems.Add(items[i]._Item.ItemCompany.ToString());
+                    item.SubItems.Add("عنصر");
+                    item.SubItems.Add(items[i].AvailableAmount);
+                    if (items[i].AvailableAmount.Length > 2) item.BackColor = Color.LimeGreen;
+                    else item.BackColor = Color.Orange;
+                    if (textBoxSearch.Text.Length > 0)
+                        item.SubItems.Add(itemsql.GetItemPath(items[i]));
+
+                    item.ImageIndex = 0;
+                    listView1.Items.Add(item);
+
+                }
+
+            }
+            if (comboBoxFilterItemFolder.SelectedIndex == 1) comboBoxCompanies.Enabled = false;
+            else
+            {
+                if (comboBoxCompanies.Items.Count > 0)
+                {
+                    comboBoxCompanies.Enabled = true;
+                    //comboBoxCompanies.SelectedIndex = 0;
+                }
+                else comboBoxCompanies.Enabled = false;
+            }
+
+
+
+
+
+        }
+        public async void RefreshTreeView()
+        {
+            if (this.treeViewFolders.InvokeRequired)
+            {
+                TreeviewVoidDelegate d = new TreeviewVoidDelegate(RefreshTreeView);
+                this.Invoke(d, new object[] { });
+            }
+            else
+            {
+                string fid;
+                if (folder == null) fid = "null";
+                else fid = folder.FolderID.ToString();
+                TreeNode[] node = treeViewFolders.Nodes.Find(fid, true);
+                if (node.Length == 0) return;
+                node[0].Expand();
+                treeViewFolders.SelectedNode = node[0];
+            }
+
+        }
+        public async void FolderIDPath()
+        {
+
+            if (this.PanelPath.InvokeRequired)
+            {
+                TreeviewVoidDelegate d = new TreeviewVoidDelegate(FolderIDPath);
+                this.Invoke(d, new object[] { });
+            }
+            else
+            {
+
+                Folder TempFolder = folder;
+                List<Folder> list = new List<Folder>();
+                while (true)
+                {
+
+                    if (TempFolder != null) { list.Add(TempFolder); TempFolder = foldersql.GetParentFolder(TempFolder); }
+                    else { list.Add(TempFolder); break; }
+
+
+                }
+                Button[] b = new Button[list.Count];
+                for (int j = 0; j < list.Count; j++)
+                {
+                    int i = list.Count - j - 1;
+                    b[i] = new Button();
+                    b[i].Image = ImageListButton.Images[0];
+
+                    b[i].AutoSize = true;
+                    b[i].AutoSizeMode = AutoSizeMode.GrowAndShrink;
+                    b[i].AutoEllipsis = false;
+                    b[i].Font = new Font(b[i].Font.FontFamily, 10);
+                    b[i].FlatStyle = FlatStyle.Flat;
+                    b[i].FlatAppearance.BorderSize = 0;
+                    if (list[j] == null)
+                    {
+                        b[i].Name = "null";
+                        b[i].Text = "ROOT";
+                    }
+                    else
+                    {
+                        b[i].Name = list[j].FolderID.ToString();
+                        b[i].Text = list[j].FolderName.ToString(); ;
+                    }
+                    b[i].TextImageRelation = TextImageRelation.ImageBeforeText;
+                    b[i].Click += new EventHandler(Button_Path_Click);
+
+                }
+                PanelPath.Controls.Clear();
+                int ButtonWidth = 0;
+                for (int i = 0; i < b.Length; i++)
+                {
+                    ButtonWidth = ButtonWidth + b[i].Width;
+                }
+                if (ButtonWidth > PanelPath.Width)
+                {
+                    int availablewidth = 0;
+                    PanelPath.Controls.Add(front);
+                    availablewidth = PanelPath.Width - front.Width - end.Width;
+                    int buton_x = front.Width;
+                    Path_startIndex = b.Length - 1;
+                    int wid = 0;
+                    for (int j = b.Length - 1; j > 0; j--)
+                    {
+                        wid = wid + b[j].Width;
+                        if (wid > availablewidth) { Path_startIndex = j + 1; break; }
+                    }
+                    int i = Path_startIndex;
+                    while (i < b.Length)
+                    {
+                        b[i].Location = new Point(buton_x, PanelPath.Location.Y - 2);
+                        PanelPath.Controls.Add(b[i]);
+                        availablewidth = availablewidth - b[i].Width;
+                        buton_x = buton_x + b[i].Width;
+                        i++;
+                    }
+                }
+                else
+                {
+                    int x1 = 0;
+                    for (int i = 0; i < b.Length; i++)
+                    {
+                        b[i].Location = new Point(x1, PanelPath.Location.Y - 2);
+                        PanelPath.Controls.Add(b[i]);
+                        b[i].Show();
+                        x1 = x1 + b[i].Width;
+                    }
+
+                }
+            }
+
+
+        }
+        public async void FillTreeViewFolder()
+        {
+            List<Folder> FoldersParents = new List<Folder>();
+
+            FoldersParents = foldersql.GetFolderChilds(null);
+            treeViewFolders.Nodes.Clear();
+            TreeNode r = new TreeNode("الجذر");
+            r.Name = "null";
+            r.ImageIndex = 0;
+            treeViewFolders.Nodes.Add(r);
+            while (FoldersParents.Count != 0)
+            {
+                List<Folder> FoldersChilds = new List<Folder>();
+                for (int i = 0; i < FoldersParents.Count; i++)
+                {
+                    TreeNode n = new TreeNode(FoldersParents[i].FolderName);
+                    n.Name = FoldersParents[i].FolderID.ToString();
+                    n.ImageIndex = 0;
+                    string parentid = "";
+                    if (FoldersParents[i].ParentFolderID == null)
+                        parentid = "null";
+                    else parentid = FoldersParents[i].ParentFolderID.ToString();
+                    TreeNode[] nodes = treeViewFolders.Nodes.Find(parentid, true);
+                    nodes[0].Nodes.Add(n);
+                    FoldersChilds.AddRange(foldersql.GetFolderChilds(FoldersParents[i]));
+
+                }
+
+                FoldersParents.Clear();
+                FoldersParents = FoldersChilds;
+            }
+
+        }
+        private async void OptimizePath()
+        {
+            PanelPath.Controls.Clear();
+            int buton_x = 0;
+            int front_width = 0;
+            if (Path_startIndex > 0)
+            {
+                PanelPath.Controls.Add(front);
+                buton_x = front.Width;
+                front_width = front.Width;
+            }
+            int i = Path_startIndex;
+            int availablewidth = PanelPath.Width - front_width - end.Width;
+
+            while (i < b.Length)
+            {
+
+                b[i].Location = new Point(buton_x, PanelPath.Location.Y - 2);
+                if (b[i].Width > availablewidth)
+                {
+                    end.Location = new Point(buton_x, 0);
+                    PanelPath.Controls.Add(end);
+                    break;
+                }
+                PanelPath.Controls.Add(b[i]);
+                availablewidth = availablewidth - b[i].Width;
+                buton_x = buton_x + b[i].Width;
+                i++;
+            }
+
+        }
+        private void Button_Path_Click(object sender, EventArgs e)
+        {
+
+            Button bb = (Button)sender;
+            try
+            {
+                folder = foldersql.GetFolderInfoByID(Convert.ToUInt32(bb.Name));
+            }
+            catch
+            {
+                folder = null;
+            }
+            OpenFolder();
+        }
+        private void End_Click(object sender, EventArgs e)
+        {
+            Path_startIndex = Path_startIndex + 1;
+            OptimizePath();
+        }
+        private void Front_Click(object sender, EventArgs e)
+        {
+            if (Path_startIndex == 0) return;
+            Path_startIndex = Path_startIndex - 1;
+            OptimizePath();
+        }
+        private void listView1_MouseDown(object sender, MouseEventArgs e)
+        {
+
+            if (e.Button == System.Windows.Forms.MouseButtons.Right)
+            {
+                List<MenuItem> MenuItemList = new List<MenuItem>();
+                listView1.ContextMenu = null;
+                bool match = false;
+                ListViewItem listitem = new ListViewItem();
+                foreach (ListViewItem item1 in listView1.Items)
+                {
+                    if (item1.Bounds.Contains(new Point(e.X, e.Y)))
+                    {
+                        match = true;
+                        listitem = item1;
+                        break;
+                    }
+                }
+                if (match)
+                {
+
+                    if (listitem.SubItems[2].Text == "مجلد")
+                    {
+                        MenuItemList.Add(OpenFolderMenuItem);
+                    }
+                    else
+                    {
+                        MenuItemList.Add(OpenItemMenuItem);
+
+                    }
+                    //MenuItemList.Add(CutMenuItem);
+
+                }
+                //////////////
+
+                //if (Moved_ItemList.Count > 0 || Moved_FolderList.Count > 0)
+                //{
+                //    MenuItemList.Add(PasteMenuItem);
+                //}
+
+                if (folder != null)
+                {
+                    MenuItem[] m_i = new MenuItem[] { new MenuItem("-"), new MenuItem("-"), SpecFilter };
+                    MenuItemList.AddRange(m_i);
+                }
+
+                //else
+                //{
+                //    CreateItemMenuItem.Enabled = true;
+                //    SpecFilter.Enabled = true;
+                //}
+                listView1.ContextMenu = new ContextMenu(MenuItemList.ToArray());
+
+            }
+
+        }
+        #region ContextMenuItemEWvents
+        private void CreateFolder_MenuItem_Click(object sender, EventArgs e)
+        {
+
+            List<Folder> FoldersInCurrentFolder = foldersql.GetFolderChilds(folder);
+            string name = null;
+            int j = 1;
+            bool Exists = true;
+            name = "مجلد جديد" + j;
+            if (FoldersInCurrentFolder.Count > 0)
+            {
+                while (Exists)
+                {
+                    bool found = false;
+                    for (int i = 0; i < FoldersInCurrentFolder.Count; i++)
+                    {
+                        if (FoldersInCurrentFolder[i].FolderName == name)
+                            found = true;
+                    }
+                    if (found == true)
+                    { j++; name = "مجلد جديد" + j; }
+                    else Exists = false;
+                }
+            }
+            uint? p_id;
+            if (folder == null) p_id = null;
+            else p_id = folder.FolderID;
+            FolderForm inp = new FolderForm(this.DB, p_id, name);
+            DialogResult dd = inp.ShowDialog();
+            if (dd == DialogResult.OK)
+            {
+
+                FillTreeViewFolder();
+                OpenFolder();
+
+            }
+
+        }
+        private void OpenFolder_MenuItem_Click(object sender, EventArgs e)
+        {
+            string id_s = listView1.SelectedItems[0].Name;
+            try
+            {
+                folder = foldersql.GetFolderInfoByID(Convert.ToUInt32(id_s));
+                OpenFolder();
+            }
+            catch (Exception ee)
+            {
+                MessageBox.Show(ee.Message);
+            }
+        }
+      
+    
+        private void OpenItem_MenuItem_Click(object sender, EventArgs e)
+        {
+            if(listView1.SelectedItems.Count >0)
+            {
+                string id_s1 = listView1.SelectedItems[0].Name;
+                Item item = itemsql.GetItemInfoByID(Convert.ToUInt32(id_s1));
+                ItemForm itemform = new ItemForm(this.DB, item);
+                itemform.Show();
+            }
+        }
+    
+      
+        private void SpecFilter_MenuItem_Click(object sender, EventArgs e)
+        {
+            splitContainer1.Panel2Collapsed = false;
+            FillFolderSpec();
+        }
+        #endregion
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            switch (comboBox1.SelectedIndex)
+            {
+                case 2: listView1.View = View.List; break;
+                case 1: listView1.View = View.SmallIcon ; break;
+                case 0: listView1.View = View.Details ; break;
+            }
+           
+        }
+
+        private void listView1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+
+            if (e.Button == MouseButtons.Left && listView1.SelectedItems.Count > 0)
+            {
+
+                switch (listView1.SelectedItems[0].SubItems[2].Text)
+                {
+                    case "مجلد":
+                        string id_s = listView1.SelectedItems[0].Name;
+                        try
+                        {
+                            folder = foldersql.GetFolderInfoByID(Convert.ToUInt32(id_s));
+                            OpenFolder();
+                        }
+                        catch (Exception ee)
+                        {
+                            MessageBox.Show(ee.Message);
+                        }
+                        break;
+                    case "عنصر":
+                        if (GetAvailableItem) { ReturnItem_(); return; }
+                        try
+                        {
+                            string id_s1 = listView1.SelectedItems[0].Name;
+                            Item item = itemsql.GetItemInfoByID(Convert.ToUInt32(id_s1));
+                            AvailableItem_ItemIN_Form AvailableItem_BuyOPRS_Form_ = new AvailableItem_ItemIN_Form(this.DB, item, false);
+                            AvailableItem_BuyOPRS_Form_.Show();
+                        }
+                        catch
+                        {
+
+                        }
+
+                        break;
+                }
+
+            }
+        }
+        private void ReturnItem_()
+        {
+            _ReturnItem = itemsql.GetItemInfoByID(Convert.ToUInt32(listView1.SelectedItems[0].SubItems[0].Name));
+            this.DialogResult = DialogResult.OK;
+            this.Close();
+        }
+        private void Back_Click(object sender, EventArgs e)
+        {
+            if (folder  == null) return;
+            folder = foldersql.GetParentFolder(folder);
+            OpenFolder();
+        }
+        private void comboBoxFilterItemFolder_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            RefreshItems(FoldersListView ,ItemsListView );
+        }
+
+        private void comboBoxCompanies_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            RefreshItems(FoldersListView, ItemsListView);
+        }
+
+        private void textBoxSearch_TextChanged(object sender, EventArgs e)
+        {
+            if (textBoxSearch.Text.Length > 0)
+            {
+
+                splitContainer1.Panel2Collapsed = true;
+                if(checkBoxSearchType .Checked ==false )
+                {
+                    FoldersListView = foldersql.SearchFolder(textBoxSearch.Text);
+                    ItemsListView = itemsql.SearchAvailableItem (textBoxSearch.Text);
+                    FillComboBoxComapines(ItemsListView);
+                    RefreshItems(FoldersListView, ItemsListView);
+                }
+                else
+                {
+                    ItemsListView = itemsql.SearchAvailableItemInFolder(folder, textBoxSearch.Text);
+                    FillComboBoxComapines(ItemsListView);
+                    RefreshItems(FoldersListView, ItemsListView);
+                }
+            }
+            else OpenFolder();
+        }
+        private void checkBoxSearchType_CheckedChanged(object sender, EventArgs e)
+        {
+            if (textBoxSearch.Text.Length > 0)
+            {
+
+                splitContainer1.Panel2Collapsed = true;
+                if (checkBoxSearchType.Checked == false)
+                {
+                    FoldersListView = foldersql.SearchFolder(textBoxSearch.Text);
+                    ItemsListView = itemsql.SearchAvailableItem(textBoxSearch.Text);
+                    FillComboBoxComapines(ItemsListView);
+                    RefreshItems(FoldersListView, ItemsListView);
+                }
+                else
+                {
+                    ItemsListView = itemsql.SearchAvailableItemInFolder(folder , textBoxSearch.Text);
+                    FillComboBoxComapines(ItemsListView);
+                    RefreshItems(FoldersListView, ItemsListView);
+                }
+            }
+            else OpenFolder();
+        }
+
+
+
+        private void ButonSpecFilterClose_Click(object sender, EventArgs e)
+        {
+            splitContainer1.Panel2Collapsed  = true;
+            OpenFolder();
+        }
+
+    
+   
+
+        private void listView1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyData ==Keys.Back )
+            {
+                if (folder == null) return;
+                folder = foldersql.GetParentFolder(folder);
+                OpenFolder();
+                return;
+            }
+            if(listView1 .SelectedItems .Count >0 )
+            {
+                
+                switch (e.KeyData )
+                {
+                    case Keys.Enter:
+                        switch (listView1.SelectedItems[0].SubItems[2].Text)
+                        {
+                            case "مجلد":
+                                string id_s = listView1.SelectedItems[0].Name;
+                                try
+                                {
+                                    folder = foldersql.GetFolderInfoByID(Convert.ToUInt32(id_s));
+                                    OpenFolder();
+                                }
+                                catch (Exception ee)
+                                {
+                                    MessageBox.Show(ee.Message);
+                                }
+                                break;
+                            case "عنصر":
+                                if (GetAvailableItem) { ReturnItem_(); return; }
+                                try
+                                {
+                                    string id_s1 = listView1.SelectedItems[0].Name;
+                                    Item item = itemsql.GetItemInfoByID(Convert.ToUInt32(id_s1));
+                                    AvailableItem_ItemIN_Form AvailableItem_BuyOPRS_Form_ = new AvailableItem_ItemIN_Form(this.DB, item, false);
+                                    AvailableItem_BuyOPRS_Form_.Show();
+                                }
+                                catch
+                                {
+
+                                }
+                                break;
+                        }
+                        break;
+                   
+   
+
+
+                }
+
+            }
+        }
+
+        private void listView1_Resize(object sender, EventArgs e)
+        {
+            Adjust_ListViewItemsColumns();
+        }
+        public async void Adjust_ListViewItemsColumns()
+        {
+            listView1.Columns[0].Width = 250;//itemname
+            listView1.Columns[1].Width = 150;//company
+            listView1.Columns[2].Width = 100;//Type
+            listView1.Columns[3].Width = 200;//createdate
+            listView1.Columns[4].Width = 200;//marketcode
+
+
+        }
+
+        private void ShowItemsForm_Load(object sender, EventArgs e)
+        {
+            Adjust_ListViewItemsColumns(); ;
+            textBoxSearch.Focus();
+            //this.listView1.Resize += new System.EventHandler(this.listView1_Resize);
+
+        }
+
+   
+
+        private void treeViewFolders_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+           
+            if (e.Button == MouseButtons.Left )
+            {
+                if (treeViewFolders.SelectedNode != null)
+                {
+                    try
+                    {
+                        folder = foldersql.GetFolderInfoByID(Convert.ToUInt32(treeViewFolders.SelectedNode.Name));
+                    }
+                    catch
+                    {
+                        folder = null;
+                    }
+
+                    OpenFolder();
+                }
+          
+            }
+        }
+    }
+  
+}
